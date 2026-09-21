@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #faf8f5;
+  --cream-alt: #f3ece0;
+  --charcoal: #2b2622;
+  --charcoal-soft: #6b6153;
+  --terracotta: #c15f3c;
+  --terracotta-soft: #f1dccb;
+  --terracotta-dark: #a04b2d;
+  --sage: #79876b;
+  --sage-soft: #e3e8da;
+  --gold: #e0914f;
+  --gold-dark: #b96e36;
+  --line: #e6ddcc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--cream);
+  --color-cream-alt: var(--cream-alt);
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-soft: var(--charcoal-soft);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-soft: var(--terracotta-soft);
+  --color-terracotta-dark: var(--terracotta-dark);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-gold: var(--gold);
+  --color-gold-dark: var(--gold-dark);
+  --color-line: var(--line);
+  --font-sans: var(--font-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--terracotta-soft);
+  color: var(--terracotta-dark);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
