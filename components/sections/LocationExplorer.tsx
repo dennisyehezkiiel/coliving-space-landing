@@ -56,7 +56,7 @@ export function LocationExplorer() {
                   <button
                     key={key}
                     onClick={() => setActive(key)}
-                    className={`flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium transition-colors ${
+                    className={`flex items-center gap-1.5 rounded-full border px-3.5 py-2 text-sm font-medium transition-colors cursor-pointer ${
                       active === key
                         ? "border-terracotta bg-terracotta text-white"
                         : "border-line text-charcoal-soft hover:border-charcoal/30"
