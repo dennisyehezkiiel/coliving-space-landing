@@ -42,7 +42,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button size="md" onClick={() => openBooking()}>
-            Book a Tour
+            <p className="text-white">Book a Tour</p>
           </Button>
         </div>
 

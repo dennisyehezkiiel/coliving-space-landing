@@ -18,7 +18,7 @@ const sizeStyles: Record<Size, string> = {
 };
 
 function buttonClasses(variant: Variant, size: Size, className: string) {
-  return `inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold tracking-tight transition-all duration-300 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+  return `inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold tracking-tight transition-all duration-300 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta cursor-pointer ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 }
 
 export function Button({

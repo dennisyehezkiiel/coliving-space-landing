@@ -79,7 +79,7 @@ export function SearchWidget() {
 
         <button
           type="submit"
-          className="flex h-11 items-center justify-center gap-2 rounded-xl bg-charcoal px-5 text-sm font-semibold text-cream transition-colors hover:bg-charcoal/90 sm:col-span-2 lg:col-span-1"
+          className="flex h-11 items-center justify-center gap-2 rounded-xl bg-charcoal px-5 text-sm font-semibold text-cream transition-colors hover:bg-charcoal/90 sm:col-span-2 lg:col-span-1 cursor-pointer"
         >
           <Search size={16} strokeWidth={2} />
           Search

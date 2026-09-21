@@ -68,8 +68,8 @@ export function RoomCard({
 
         <div className="mt-auto flex flex-col gap-2.5 pt-1 sm:flex-row">
           <Button size="md" className="flex-1" onClick={onTour}>
-            <Video size={16} strokeWidth={1.75} />
-            View Details & 360 Tour
+            <Video color="white" size={16} strokeWidth={1.75} />
+            <p className="text-white">View Details & 360 Tour</p>
           </Button>
           <Button variant="secondary" size="md" onClick={onBook}>
             Inquire

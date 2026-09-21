@@ -27,7 +27,7 @@ export function Hero() {
                 document.getElementById("rooms")?.scrollIntoView({ block: "start" })
               }
             >
-              Explore Rooms
+              <p className="text-white">Explore Rooms</p>
             </Button>
             <Button variant="secondary" size="lg" onClick={() => openTour()}>
               Schedule Virtual Tour
@@ -47,7 +47,7 @@ export function Hero() {
             />
           </div>
 
-          <div className="absolute -left-4 top-6 flex items-center gap-2 rounded-2xl border border-white/60 bg-white/80 px-4 py-3 shadow-lg shadow-charcoal/10 backdrop-blur-md sm:left-6">
+          <div className="absolute left-6 top-6 flex items-center gap-2 rounded-2xl border border-white/60 bg-white/80 px-4 py-3 shadow-lg shadow-charcoal/10 backdrop-blur-md sm:left-6">
             <div className="flex -space-x-2">
               {[14, 25, 8].map((n) => (
                 <Image

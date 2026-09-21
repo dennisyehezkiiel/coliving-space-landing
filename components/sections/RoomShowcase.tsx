@@ -38,7 +38,7 @@ export function RoomShowcase() {
                 <button
                   key={filter.key}
                   onClick={() => setActive(filter.key)}
-                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors cursor-pointer ${
                     active === filter.key
                       ? "border-terracotta bg-terracotta text-white"
                       : "border-line bg-white text-charcoal-soft hover:border-charcoal/30"
