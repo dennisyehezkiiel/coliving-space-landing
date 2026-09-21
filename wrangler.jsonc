@@ -10,12 +10,12 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
-  "services": [
-    {
-      "binding": "WORKER_SELF_REFERENCE",
-      "service": "coliving-space-landing"
-    }
-  ],
+  // "services": [
+  //   {
+  //     "binding": "WORKER_SELF_REFERENCE",
+  //     "service": "coliving-space-landing"
+  //   }
+  // ],
   "images": {
     "binding": "IMAGES"
   },
