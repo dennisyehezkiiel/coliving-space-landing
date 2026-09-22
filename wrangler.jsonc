@@ -3,12 +3,10 @@
   "main": ".open-next/worker.js",
   "name": "coliving-space-landing",
   "compatibility_date": "2026-09-18",
-  "compatibility_flags": [
-    "global_fetch_strictly_public"
-  ],
+  "compatibility_flags": ["global_fetch_strictly_public"],
   "assets": {
     "directory": ".open-next/assets",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
   },
   // "services": [
   //   {
@@ -17,9 +15,13 @@
   //   }
   // ],
   "images": {
-    "binding": "IMAGES"
+    "binding": "IMAGES",
   },
   "observability": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
+  "vars": {
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_1UBBYLaK2HamqHLeducu3Q_q9WydmA7",
+    "NEXT_PUBLIC_SUPABASE_URL": "https://rromnowusvcybbeoinnr.supabase.co",
+  },
 }
