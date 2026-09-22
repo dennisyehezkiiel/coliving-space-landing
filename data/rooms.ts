@@ -19,8 +19,8 @@ export const roomTagLabels: Record<RoomTag, string> = {
 };
 
 export const rooms: Room[] = [
-   {
-    id: "studio-teras",
+  {
+   id: "studio-teras-panorama",
     name: "Studio Teras",
     tier: "Deluxe Balcony",
     price: 4750000,
@@ -40,7 +40,7 @@ export const rooms: Room[] = [
     image: "https://picsum.photos/seed/kanaya-suite-panorama/1200/900",
   },
   {
-    id: "studio-teras",
+    id: "studio-teras-compact",
     name: "Studio Teras",
     tier: "Deluxe Balcony",
     price: 4750000,
