@@ -9,11 +9,16 @@ function prefersReducedMotion() {
 
 export function useInView<T extends HTMLElement>(threshold = 0.2) {
   const ref = useRef<T | null>(null);
-  const [inView, setInView] = useState(prefersReducedMotion);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
     if (!node || inView) return;
+
+    if (prefersReducedMotion()) {
+      const frame = requestAnimationFrame(() => setInView(true));
+      return () => cancelAnimationFrame(frame);
+    }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
